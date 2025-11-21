@@ -695,5 +695,16 @@
             resetLabels([layer_GramaNiladhariDivisionBoundary_10,layer_DivisionalSecretariatDivisionBoundary_11,layer_DistrictBoundary_12,layer_ProvienceBoundary_13,layer_ProjectBoundary_14]);
         });
         </script>
+		     <script>
+        // Inisialisasi Layer Switcher
+        var layerSwitcher = new ol.control.LayerSwitcher({
+            activationMode: 'click',
+            startActive: false,
+            tipLabel: 'Layers',
+            groupSelectStyle: 'children',
+            collapseTipLabel: 'Collapse layers'
+        });
+        map.addControl(layerSwitcher);
+        </script>
     </body>
 </html>
